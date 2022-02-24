@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --coverage",
+    "test:watch": "jest test --watch",
     "lint": "next lint --fix",
     "prettier": "prettier --write **/*.{js,ts,tsx}",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
@@ -32,9 +33,11 @@
     "eslint-config-next": "12.0.1",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.4",
-    "jest": "^27.3.1",
+    "jest": "^27.5.1",
+    "jsdom": "^19.0.0",
     "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
+    "react-testing-library": "^8.0.1",
     "typescript": "4.4.4"
   },
   "lint-staged": {

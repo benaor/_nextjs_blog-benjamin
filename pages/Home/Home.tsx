@@ -1,10 +1,11 @@
 import { NextPage } from 'next'
 import React from 'react'
+import PageWithNavbar from '../../components/templates/PageWithNavbar'
 
 const Home: NextPage = () => {
   return (
     <div data-testid="Home">
-      <p>This is the Home</p>
+      <PageWithNavbar />
     </div>
   )
 }

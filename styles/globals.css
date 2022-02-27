@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Cinzel-Regular';
+  src: local('Cinzel-Regular'), url(./fonts/Cinzel/Cinzel-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'AbhayaLibre-Regular';
+  src: local('AbhayaLibre-Regular.ttf'),
+    url(./fonts/Abhaya_Libre/AbhayaLibre-Regular.ttf) format('ttf');
+}

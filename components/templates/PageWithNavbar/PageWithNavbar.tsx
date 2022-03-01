@@ -1,11 +1,12 @@
 import * as React from 'react'
 import Navbar from '../../organisms/Navbar'
+import { PropType } from './PageWithNavbar.types'
 
-const PageWithNavbar = () => {
+const PageWithNavbar = ({ children }: PropType) => {
   return (
     <div data-testid="PageWithNavbar">
       <Navbar />
-      <p>Page with Navbar</p>
+      {children}
     </div>
   )
 }

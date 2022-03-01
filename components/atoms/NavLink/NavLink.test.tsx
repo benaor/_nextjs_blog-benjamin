@@ -2,17 +2,17 @@ import { render } from '@testing-library/react'
 import NavLink from '.'
 import { PropType } from './NavLink.types'
 
-const { name, to }: PropType = {
-  name: 'Test',
-  to: '#test'
+const { children, href }: PropType = {
+  children: 'Test',
+  href: '#test'
 }
 
 describe('NavLink', () => {
   test('should render correctly with all props', () => {
-    render(<NavLink name={name} to={to} />).getByTestId('NavLink')
+    render(<NavLink href={href}>{children}</NavLink>).getByTestId('NavLink')
   })
 
   test('should render with correctly name', () => {
-    render(<NavLink name={name} to={to} />).getByText(String(name))
+    render(<NavLink href={href}> {children}</NavLink>).getByText(String(children))
   })
 })

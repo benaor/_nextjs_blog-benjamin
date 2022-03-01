@@ -1,5 +1,6 @@
+import { ReactNode } from 'react'
+
 export type PropType = {
-  name: String
-  to: String
-  isActive?: Boolean
+  href: string
+  children: ReactNode
 }

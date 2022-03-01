@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Footer from '../../organisms/Footer'
 import Navbar from '../../organisms/Navbar'
 import { PropType } from './PageWithNavbar.types'
 
@@ -7,6 +8,7 @@ const PageWithNavbar = ({ children }: PropType) => {
     <div data-testid="PageWithNavbar">
       <Navbar />
       {children}
+      <Footer />
     </div>
   )
 }

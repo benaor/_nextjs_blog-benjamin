@@ -5,7 +5,9 @@ import PageWithNavbar from '../../components/templates/PageWithNavbar'
 const Home: NextPage = () => {
   return (
     <div data-testid="Home">
-      <PageWithNavbar />
+      <PageWithNavbar>
+        <p>This is the HOME page</p>
+      </PageWithNavbar>
     </div>
   )
 }

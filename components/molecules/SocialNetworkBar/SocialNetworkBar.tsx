@@ -13,7 +13,7 @@ const SocialNetworkBar: React.FunctionComponent<PropType> = ({ networks, style }
   return (
     <ul data-testid="SocialNetworkBar" style={styles}>
       {networks.map((rs: SocialLinkType) => (
-        <li key={rs.name}>
+        <li key={rs.name} data-testid={rs.name}>
           <a href={rs.link} target="_blank" rel="noreferrer">
             {rs.name}
           </a>

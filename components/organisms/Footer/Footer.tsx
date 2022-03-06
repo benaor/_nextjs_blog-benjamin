@@ -5,6 +5,7 @@ import Citation from '../../molecules/Citation'
 import HorizontalScrollingBar from '../../molecules/HorizontalScrollingBar'
 import SocialNetworkBar from '../../molecules/SocialNetworkBar'
 import { SocialLinkType } from '../../molecules/SocialNetworkBar/SocialNetworkBar.types'
+import WebsiteSignature from '../../molecules/WebsiteSignature'
 
 const Footer: React.FunctionComponent = () => {
   const itemsToScroll: Array<string> = [
@@ -38,7 +39,9 @@ const Footer: React.FunctionComponent = () => {
   return (
     <footer data-testid="Footer" style={style}>
       <HorizontalScrollingBar itemsToScroll={itemsToScroll} />
+
       <Logo />
+
       <Citation author="Conor Mc Gregor">
         Il n’y a pas de talent ici, ce n’est que du travail. C’est une obsession. Le talent n’existe
         pas. En tant qu’humains, nous sommes tous égaux. Vous pouvez devenir qui vous voulez si vous
@@ -46,6 +49,7 @@ const Footer: React.FunctionComponent = () => {
         Je suis obsédé.
       </Citation>
       <SocialNetworkBar networks={networks} />
+      <WebsiteSignature />
     </footer>
   )
 }

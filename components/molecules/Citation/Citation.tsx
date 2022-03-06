@@ -3,14 +3,17 @@ import { PropType } from './Citation.types'
 
 const Citation: React.FunctionComponent<PropType> = ({
   children,
-  author = 'Artiste inconnu'
+  author = 'Artiste inconnu',
+  style
 }: PropType) => {
   const styles: React.CSSProperties = {
     width: '40%',
+    padding: '30px 0',
     margin: 'auto',
     textAlign: 'center',
     fontFamily: 'Abhaya-libre',
-    lineHeight: '1.7'
+    lineHeight: '1.7',
+    ...style
   }
 
   return (

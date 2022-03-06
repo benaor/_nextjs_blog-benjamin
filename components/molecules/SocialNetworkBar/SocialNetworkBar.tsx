@@ -1,11 +1,13 @@
 import * as React from 'react'
 import { PropType, SocialLinkType } from './SocialNetworkBar.types'
 
-const SocialNetworkBar: React.FunctionComponent<PropType> = ({ networks }: PropType) => {
+const SocialNetworkBar: React.FunctionComponent<PropType> = ({ networks, style }: PropType) => {
   const styles: React.CSSProperties = {
     display: 'flex',
     justifyContent: 'space-around',
-    width: '30%'
+    width: '30%',
+    padding: '30px 0',
+    ...style
   }
 
   return (

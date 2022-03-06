@@ -12,3 +12,13 @@
   src: local('AbhayaLibre-Regular.ttf'),
     url(./fonts/Abhaya_Libre/AbhayaLibre-Regular.ttf) format('ttf');
 }
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(110%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-110%, 0, 0);
+  }
+}

@@ -1,0 +1,24 @@
+import * as React from 'react'
+import { PropType } from './Citation.types'
+
+const Citation: React.FunctionComponent<PropType> = ({
+  children,
+  author = 'Artiste inconnu'
+}: PropType) => {
+  const styles: React.CSSProperties = {
+    width: '40%',
+    margin: 'auto',
+    textAlign: 'center',
+    fontFamily: 'Abhaya-libre',
+    lineHeight: '1.7'
+  }
+
+  return (
+    <div data-testid="Citation" style={styles}>
+      <p>{children}</p>
+      <p data-testid={author}>- {author} -</p>
+    </div>
+  )
+}
+
+export default Citation

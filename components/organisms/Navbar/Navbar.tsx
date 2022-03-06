@@ -7,7 +7,7 @@ const Navbar = () => {
   const styles: React.CSSProperties = {
     display: 'flex',
     justifyContent: 'space-between',
-    minHeight: '100px',
+    padding: '10px 20px',
     borderBottom: '1px solid #E5E5E5'
   }
 

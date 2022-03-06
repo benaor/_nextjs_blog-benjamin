@@ -1,4 +1,6 @@
+import { CSSProperties } from 'react'
+
 export type PropType = {
-  size?: String
   name?: String
+  style?: CSSProperties
 }
